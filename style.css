@@ -16,44 +16,45 @@ body {
 /*===============Header================*/
 header {
     /*background: linear-gradient(to left, #00c6ff, #0072ff);*//*Dégradé de couleur*/
-    height: 100px;
-    width: 100%;
+   width: 100%; 
+   height: 100px;
+    
 }
 
 /*=================Icône se connecter et recherche=================*/
 /* .panier {
-    width: 100px;
-    height: 100px;
     display: flex;
     align-items: center;
     justify-content: left;
+    width: 100px;
+    height: 100px;
 } */
 
 .connexion{
     display: flex;
+    align-items: center;
+    justify-content: left;
     width: 100px;
     height: 100px;
     cursor: pointer;
     border-radius: 5px;
-    align-items: center;
-    justify-content: left;
 }
 
 
 /*PARTIE ===================Menu navigation===================*/
 nav {
-    background: linear-gradient(to left, #b7b7ec52, #ffffff);
     display: flex;
-    /* position: sticky; */
-    top: 0;
+    top: 0;    
+    background: linear-gradient(to left, #b7b7ec52, #ffffff);
+/* position: sticky; */
 }
 
 .logo {
-    width: 150px;
-    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 150px;
+    height: 100px;
 }
 
 li {
@@ -72,11 +73,12 @@ a:hover {
 }
 
 .menu {
-    height: 100px;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100px;
+    width: 100%;
+    
     margin-left: 10px;
 }  
 
@@ -84,9 +86,8 @@ ul {
     display: flex;
     align-items: center;
     gap: 20px;
-    
 }
-
+/*///////////////////////////////////////////////////////////MEDIAQUERY////////////////////////////////////////////////////////////*/
 /*Disparition du menu classique*/
 @media screen and (max-width: 1180px) {
     .menu {
@@ -164,10 +165,8 @@ ul {
 
 @media screen and (max-width: 1080px) {
     .active ul li a:hover {
-        
         text-decoration: underline;
     }   
-        
 }
 
 /*PARTIE ===================Titre page Principale===================*/
@@ -185,16 +184,13 @@ header {
     padding: 0;
 } */
 
-
-  /* .img-accueil {
+/* .img-accueil {
     object-fit: cover;
     filter: brightness(50%);
     margin: 0;
     padding: 0;
     transform: no-scale;
     } */
-
-
 
 @media screen and (max-width: 1080px) {
     .img-accueil {
@@ -260,19 +256,19 @@ h3 {
         color: #f9f0f0;
      }
    }    
- /*==============*/  
+ /*//////////////////////////////////////////////////FIN MEDIAQUERY////////////////////////////////////////////////////////////////////*/  
 /*PARTIE ===================Bouton===================*/  
 
-   #button {
-   width: 150px;
-   height: auto;
-    margin: 55px auto;
+#button {
     text-align: center;
+    width: 150px;
+    height: auto;
+    margin: 55px auto;
+    padding: 15px;
     font-size: 20px;
     color: #f9f0f0;
     background-color: #0072ff;
     border-radius: 5px;
-    padding: 15px;
     cursor: pointer;
    }
 /*PARTIE ===================Trois images===================*/
@@ -314,7 +310,29 @@ img {
     transition: 0.5s;
 }
 
-.titre-section2 {
+/*PARTIE ===================Section 2===================*/
+.section2 {
+    width: 100%;
+    height: auto;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex-direction: column; */
+    margin: 0 auto;
+}
+
+.hr-apropos-de-nous {
+    margin: 0 auto;
+    background-color: #fab8b8;
+    box-shadow: 2px 2px 4px #000000;
+    width: 300px;
+    height: 3px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.titre-section2 {/*A propos de nous*/
     text-align: center;
     font-family: 'Tangerine' , serif;
     font-size: 60px;
@@ -322,29 +340,32 @@ img {
     margin-top: 20px;
 }
 
-.para1-nos-services {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 400px;
+
+
+p.para1-a-propos-de-nous {
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    /* float: right; */
+    display: block;
+    width: 600px;
+    height: 600px;
 }
 
 footer {
     width: 100%;
     height: 600px;
-    position: relative;
+    /* position: relative; */
     background: linear-gradient(to left, #ecb7ba52, #ffffff);
 }
 
-footer p {
-    position: absolute;
+p.footer {
+    /* position: absolute; */
     font-size: 15px;
     /* background-color: #080cf9; */
-   bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
+ 
+    margin-bottom: 0;
+    margin-top: 0;
     text-align: center;
     color: #040404;
     padding: 20px;
