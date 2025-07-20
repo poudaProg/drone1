@@ -3,7 +3,7 @@ body {
     background: rgba(247, 248, 249, 0.867);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 * {
@@ -15,13 +15,7 @@ body {
     padding: 0;
 }
 
-/*===============Header================*/
-header {
-    /*background: linear-gradient(to left, #00c6ff, #0072ff);*//*Dégradé de couleur*/
-   width: 100%; 
-   height: 100px;
-    
-}
+
 
 /*=================Icône se connecter et recherche=================*/
 /* .panier {
@@ -259,7 +253,19 @@ h3 {
      }
    }    
  /*//////////////////////////////////////////////////FIN MEDIAQUERY////////////////////////////////////////////////////////////////////*/  
-/*PARTIE ===================Bouton===================*/  
+
+/*PARTIE ===================main===================*/
+.main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+ /*PARTIE ===================Bouton===================*/  
 
 #button {
     text-align: center;
@@ -334,35 +340,37 @@ img {
     border-right: none;
 }
 
-.titre-section2 {/*A propos de nous*/
-    text-align: center;
+h2.titre-section2 {/*A propos de nous*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Tangerine' , serif;
     font-size: 60px;
     color: #040404;
-    margin-top: 60px;
+    /* margin-top: 50px; */
+    padding: 0;
+    width: 600px;
+    height: 100px;
 }
 
-
-
 p.para1-a-propos-de-nous {
-background: linear-gradient(to right, #fab8b8, #fedddd);
+    background: linear-gradient(to right, #fab8b8, #fedddd);
     color: #040404;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-   /* align-self:flex-end; */
-  border-radius: 5px;
-   padding: 30px;
-   margin: auto 50px;
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    width: 35%;
-    height: 500px;
+    font-size: 15px;    
+    width: 55%;
+    height: 400px;
 }
 
 footer {
     width: 100%;
-    height: 600px;
+    height: auto;
     background: linear-gradient(to left, #ecb7ba52, #ffffff);
 }
 
@@ -370,15 +378,12 @@ p.footer {
     display: flex;
     align-items: end;
     justify-content: center;
-    margin: 0;
     padding: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 400;
-
-    font-size:10px;
+    font-size: 10px;
     color: #040404;
     width: 100%;
-    height: 100vh;
-   
+    height: 600px;
 }
+
 
